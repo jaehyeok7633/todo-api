@@ -16,10 +16,21 @@ public class TodoCreateRequestDTO {
     @Size(min = 2, max = 30)
     private String title;
 
-    // dto를 언터티로 변환
+    // dto를 엔터티로 변환
     public Todo toEntity() {
         return Todo.builder()
                 .title(this.title)
                 .build();
     }
+
 }
+
+
+
+
+
+
+
+
+
+
